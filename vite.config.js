@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react-swc'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: process.env.VERCEL ? "/" : "/ecom-app/"
+  base: process.env.VERCEL ? "/" : "/ecomm-app/"
 })
