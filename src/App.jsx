@@ -11,6 +11,7 @@ import AdminLogin from "./components/AdminLogin"
 import AdminDashboard from "./components/AdminDashboard"
 import { AuthProvider, useAuth } from "./context/AuthContext"
 import { ProductProvider } from "./context/ProductContext"
+import Payment from "./components/Payment"
 
 const ProtectedAdminRoute = ({ children }) => {
   const { user } = useAuth();
@@ -38,6 +39,7 @@ function App() {
               <Route path="/products1" element={<Products1 />} />
               <Route path="/signup" element={<Signup />} />
               <Route path="/admin-login" element={<AdminLogin />} />
+              <Route path="/payment" element={<Payment/>} />
               <Route
                 path="/admin-dashboard"
                 element={

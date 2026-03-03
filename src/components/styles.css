@@ -331,3 +331,87 @@ footer {
 .login-card a:hover {
   text-decoration: underline;
 }
+
+/* Payment Page Styles */
+.payment-card {
+  background: white;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 600px;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.payment-card h2 {
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-primary);
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.payment-card h3 {
+  color: var(--text-primary);
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.25rem;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 0.5rem;
+}
+
+.payment-card .input-group {
+  margin-bottom: var(--spacing-md);
+  text-align: left;
+}
+
+.payment-card .input-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 0.3rem;
+}
+
+.payment-card input,
+.payment-card select {
+  width: 100%;
+  padding: 0.875rem;
+  border-radius: var(--radius-md);
+  border: 1px solid #cbd5e1;
+  outline: none;
+  background: #f8fafc;
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+
+.payment-card input:focus,
+.payment-card select:focus {
+  border-color: var(--primary);
+  background: white;
+  box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+.action-btn {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  border: none;
+  padding: 0.875rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(6, 182, 212, 0.3);
+}
+
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(6, 182, 212, 0.4);
+}

@@ -1,8 +1,8 @@
-import Header from "./Header";
-import Footer from "./Footer";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Cart() {
+  const navigate = useNavigate();
   const [cartItems, setCartItems] = useState([]);
 
   // ✅ Initialize cart with quantity
@@ -77,6 +77,9 @@ function Cart() {
 
         <div>
           <h2>Total price: ${totalPrice}</h2>
+          <button onClick={() => navigate('/payment')} style={{ padding: "10px 20px", fontSize: "18px", cursor: "pointer" }}>
+            Proceed to Payment
+          </button>
         </div>
       </div>
     </>
